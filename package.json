@@ -2,6 +2,7 @@
   "author": "Dario Sechi",
   "devDependencies": {
     "@aracna/core": "^1.1.25",
+    "@aracna/icons-feather-web": "^1.0.0",
     "@aracna/react": "^1.0.17",
     "@aracna/web": "^1.0.24",
     "@aracna/web-components": "^1.0.22",
@@ -2054,6 +2055,7 @@
   "name": "@aracna/icons-feather-react",
   "peerDependencies": {
     "@aracna/core": ">= 1.1.0",
+    "@aracna/icons-feather-web": ">= 1.0.0",
     "@aracna/react": ">= 1.0.0",
     "@aracna/web": ">= 1.0.0",
     "@aracna/web-components": ">= 1.0.0",

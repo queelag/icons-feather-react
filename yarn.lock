@@ -22,6 +22,11 @@
     node-fetch-cjs latest
     rfc4648 latest
 
+"@aracna/icons-feather-web@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@aracna/icons-feather-web/-/icons-feather-web-1.0.0.tgz#72c3ca194aa4dddb6672d61a3bb91a91832675b2"
+  integrity sha512-EbSso9olAP62Go5dIsTqpdurWTzIOae/tWy98yuavdawg9QhadOInpPcneBudNHsORvpfFxF5NNoeIq7EdTJqw==
+
 "@aracna/react@^1.0.17":
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/@aracna/react/-/react-1.0.17.tgz#181de982f83df52ae98d4e354b3069638bb480d9"
