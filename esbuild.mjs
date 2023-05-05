@@ -13,9 +13,22 @@ const OPTIONS = {
  */
 build({
   ...OPTIONS,
-  entryPoints: await glob('./src/**/*.{ts,tsx}'),
+  entryPoints: await glob('./src/**/*.ts'),
   format: 'esm',
   outdir: 'dist',
+  packages: 'external',
+  platform: 'neutral'
+}).catch(() => process.exit(1))
+
+/**
+ * CJS
+ */
+build({
+  ...OPTIONS,
+  bundle: true,
+  entryPoints: ['src/index.ts'],
+  format: 'cjs',
+  outfile: 'dist/index.cjs.js',
   packages: 'external',
   platform: 'neutral'
 }).catch(() => process.exit(1))
@@ -38,7 +51,7 @@ build({
 /**
  * ELEMENTS
  */
-for (let element of await glob('./src/components/**/*.tsx')) {
+for (let element of await glob('./src/components/**/*.ts')) {
   /**
    * CJS
    */
@@ -47,8 +60,8 @@ for (let element of await glob('./src/components/**/*.tsx')) {
     bundle: true,
     entryPoints: [element],
     format: 'cjs',
-    outfile: element.replace('src', 'dist').replace('.tsx', '.cjs.js'),
-    platform: 'browser',
-    treeShaking: true
+    outfile: element.replace('src', 'dist').replace('.ts', '.cjs.js'),
+    packages: 'external',
+    platform: 'neutral'
   }).catch(() => process.exit(1))
 }

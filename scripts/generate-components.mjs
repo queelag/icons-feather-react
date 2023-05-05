@@ -37,6 +37,6 @@ for (let path of await glob('node_modules/@aracna/icons-feather-web/elements/*-e
     trailingComma: 'none'
   })
 
-  await writeFile(`src/components/${name.replace('-element', '')}.tsx`, ts)
+  await writeFile(`src/components/${name.replace('-element', '')}.ts`, ts)
   await appendFile('src/index.ts', `export * from './components/${name.replace('-element', '')}.js'\n`)
 }
