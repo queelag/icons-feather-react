@@ -40,7 +40,6 @@ build({
   ...OPTIONS,
   bundle: true,
   entryPoints: ['src/index.ts'],
-  external: ['node-fetch'],
   format: 'iife',
   globalName: 'AracnaIconsFeatherReact',
   outfile: 'dist/index.iife.js',
