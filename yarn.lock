@@ -26,6 +26,11 @@
   resolved "https://registry.yarnpkg.com/@aracna/icons-feather-web/-/icons-feather-web-1.0.9.tgz#59c3d9a8202ac0f2fa9f38a278721983ee110897"
   integrity sha512-6EdBsOH0twErlycO4SCDZxieVQZBKP0Cf29mDRDxY9X2cp/CW/WrAr9Kh2ZyJr0UM01XiUBMFaQgBHpCyamOTg==
 
+"@aracna/icons-feather@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@aracna/icons-feather/-/icons-feather-1.0.2.tgz#571cf7f741355924ea1ed09cd429f060942f650c"
+  integrity sha512-J5BOeHmeTTf8OkXCsI9ZyiDFsJXzmnIUbDiLXGUglMo3N9WRfp2rUkzmJ388zZlXX94domsSMkpp7+HGDQ8DoA==
+
 "@aracna/react@^1.0.26":
   version "1.0.26"
   resolved "https://registry.yarnpkg.com/@aracna/react/-/react-1.0.26.tgz#6d2668c6d9036475e6ffb4bfdf49c0801138a904"
