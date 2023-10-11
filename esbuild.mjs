@@ -1,6 +1,4 @@
-import { getPascalCaseString } from '@aracna/core'
 import { build } from 'esbuild'
-import globals from 'esbuild-plugin-globals'
 import { glob } from 'glob'
 
 /** @type {import('esbuild').BuildOptions} */
@@ -28,9 +26,9 @@ build({
   ...OPTIONS,
   bundle: true,
   entryPoints: ['src/index.ts'],
-  external: ['@aracna/core', '@aracna/react', '@aracna/web', '@aracna/web-components', '@floating-ui/dom', 'dompurify', 'focus-trap', 'tabbable'],
   format: 'cjs',
   outfile: 'dist/index.cjs',
+  packages: 'external',
   platform: 'neutral',
   treeShaking: true
 }).catch(() => process.exit(1))
@@ -46,25 +44,10 @@ for (let component of await glob('./src/components/**/*.ts')) {
     ...OPTIONS,
     bundle: true,
     entryPoints: [component],
-    external: ['@aracna/core', '@aracna/react', '@aracna/web', '@aracna/web-components', '@floating-ui/dom', 'dompurify', 'focus-trap', 'tabbable'],
     format: 'cjs',
     outfile: component.replace('src', 'dist').replace('.ts', '.cjs'),
+    packages: 'external',
     platform: 'neutral',
-    treeShaking: true
-  }).catch(() => process.exit(1))
-
-  /**
-   * IIFE
-   */
-  build({
-    ...OPTIONS,
-    bundle: true,
-    entryPoints: [component],
-    format: 'iife',
-    globalName: 'IconFeather' + getPascalCaseString(component.replace('src/components/', '').replace('.ts', '')),
-    outfile: component.replace('src', 'dist').replace('.ts', '.iife.js'),
-    platform: 'browser',
-    plugins: [globals({ react: 'React' })],
     treeShaking: true
   }).catch(() => process.exit(1))
 }
