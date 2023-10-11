@@ -1,7 +1,7 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent, IconProps } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
-import { IconFeatherUserMinusElement } from '@aracna/icons-feather-web/elements/user-minus-element.js'
+import { IconFeatherUserMinusElement } from '@aracna/icons-feather-web/elements/user-minus-element'
 
 export const IconFeatherUserMinus: ElementComponent<IconFeatherUserMinusElement, IconProps> = createBaseElementComponent<
   IconFeatherUserMinusElement,

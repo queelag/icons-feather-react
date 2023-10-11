@@ -1,7 +1,7 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent, IconProps } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
-import { IconFeatherArrowDownCircleElement } from '@aracna/icons-feather-web/elements/arrow-down-circle-element.js'
+import { IconFeatherArrowDownCircleElement } from '@aracna/icons-feather-web/elements/arrow-down-circle-element'
 
 export const IconFeatherArrowDownCircle: ElementComponent<IconFeatherArrowDownCircleElement, IconProps> = createBaseElementComponent<
   IconFeatherArrowDownCircleElement,

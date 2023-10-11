@@ -1,7 +1,7 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent, IconProps } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
-import { IconFeatherArrowUpRightElement } from '@aracna/icons-feather-web/elements/arrow-up-right-element.js'
+import { IconFeatherArrowUpRightElement } from '@aracna/icons-feather-web/elements/arrow-up-right-element'
 
 export const IconFeatherArrowUpRight: ElementComponent<IconFeatherArrowUpRightElement, IconProps> = createBaseElementComponent<
   IconFeatherArrowUpRightElement,

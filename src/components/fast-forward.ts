@@ -1,7 +1,7 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent, IconProps } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
-import { IconFeatherFastForwardElement } from '@aracna/icons-feather-web/elements/fast-forward-element.js'
+import { IconFeatherFastForwardElement } from '@aracna/icons-feather-web/elements/fast-forward-element'
 
 export const IconFeatherFastForward: ElementComponent<IconFeatherFastForwardElement, IconProps> = createBaseElementComponent<
   IconFeatherFastForwardElement,

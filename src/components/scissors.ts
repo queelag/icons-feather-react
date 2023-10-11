@@ -1,7 +1,7 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { ElementComponent, IconProps } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
-import { IconFeatherScissorsElement } from '@aracna/icons-feather-web/elements/scissors-element.js'
+import { IconFeatherScissorsElement } from '@aracna/icons-feather-web/elements/scissors-element'
 
 export const IconFeatherScissors: ElementComponent<IconFeatherScissorsElement, IconProps> = createBaseElementComponent<
   IconFeatherScissorsElement,
