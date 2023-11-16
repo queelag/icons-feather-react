@@ -1,9 +1,9 @@
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent, IconProps } from '@aracna/react'
+import type { AracnaIconProps, ElementComponent } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
 import { IconFeatherLogInElement } from '@aracna/icons-feather-web/elements/log-in-element'
 
-export const IconFeatherLogIn: ElementComponent<IconFeatherLogInElement, IconProps> = createBaseElementComponent<
+export const IconFeatherLogIn: ElementComponent<IconFeatherLogInElement, AracnaIconProps> = createBaseElementComponent<
   IconFeatherLogInElement,
   IconElementAttributes,
   IconElementEventMap

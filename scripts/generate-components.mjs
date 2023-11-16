@@ -15,13 +15,13 @@ for (let path of await glob('node_modules/@aracna/icons-feather-web/elements/*-e
   ts = /* HTML */ `
     <script>
       import { createBaseElementComponent } from '@aracna/react'
-      import type { ElementComponent, IconProps } from '@aracna/react'
+      import type { AracnaIconProps, ElementComponent } from '@aracna/react'
       import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
       import { IconFeather${pname} } from '@aracna/icons-feather-web/elements/${name}'
 
       ${[
         `export const IconFeather${pname.replace('Element', '')}: `,
-        `ElementComponent<IconFeather${pname}, IconProps> = createBaseElementComponent<IconFeather${pname}, IconElementAttributes, IconElementEventMap>`,
+        `ElementComponent<IconFeather${pname}, AracnaIconProps> = createBaseElementComponent<IconFeather${pname}, IconElementAttributes, IconElementEventMap>`,
         `('icon-feather-${name.replace('-element', '')}', IconFeather${pname})`
       ].join('')}
     </script>

@@ -1,9 +1,9 @@
 import { createBaseElementComponent } from '@aracna/react'
-import type { ElementComponent, IconProps } from '@aracna/react'
+import type { AracnaIconProps, ElementComponent } from '@aracna/react'
 import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
 import { IconFeatherCornerRightDownElement } from '@aracna/icons-feather-web/elements/corner-right-down-element'
 
-export const IconFeatherCornerRightDown: ElementComponent<IconFeatherCornerRightDownElement, IconProps> = createBaseElementComponent<
+export const IconFeatherCornerRightDown: ElementComponent<IconFeatherCornerRightDownElement, AracnaIconProps> = createBaseElementComponent<
   IconFeatherCornerRightDownElement,
   IconElementAttributes,
   IconElementEventMap
