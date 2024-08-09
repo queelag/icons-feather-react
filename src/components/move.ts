@@ -1,10 +1,10 @@
 import { createBaseElementComponent } from '@aracna/react'
 import type { AracnaIconProps, ElementComponent } from '@aracna/react'
-import type { IconElementAttributes, IconElementEventMap } from '@aracna/web'
+import type { AracnaIconElementAttributes, AracnaIconElementEventMap } from '@aracna/web-components'
 import { IconFeatherMoveElement } from '@aracna/icons-feather-web/elements/move-element'
 
 export const IconFeatherMove: ElementComponent<IconFeatherMoveElement, AracnaIconProps> = createBaseElementComponent<
   IconFeatherMoveElement,
-  IconElementAttributes,
-  IconElementEventMap
+  AracnaIconElementAttributes,
+  AracnaIconElementEventMap
 >('icon-feather-move', IconFeatherMoveElement)
