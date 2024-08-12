@@ -4,9 +4,9 @@
     "@aracna/core": "^1.1.82",
     "@aracna/icons-feather": "^1.0.10",
     "@aracna/icons-feather-web": "^1.0.23",
-    "@aracna/react": "^1.0.49",
+    "@aracna/react": "1.0.53-rc.0",
     "@aracna/web": "^1.0.75",
-    "@aracna/web-components": "^1.0.79",
+    "@aracna/web-components": "1.0.81-rc.1",
     "@floating-ui/dom": "^1.6.10",
     "@microsoft/api-extractor": "^7.47.5",
     "@testing-library/react": "^16.0.0",
@@ -67,11 +67,14 @@
   "repository": "https://github.com/aracna/icons-feather-react",
   "scripts": {
     "build": "rm -rf dist && node esbuild.mjs && pnpm tsc",
-    "prepublish": "pnpm test && pnpm build && pnpm version patch && cp LICENSE package.json README.md dist",
+    "prepublish": "pnpm test && pnpm build && cp LICENSE package.json README.md dist",
     "test": "vitest run"
   },
   "sideEffects": false,
   "type": "module",
   "types": "index.d.ts",
-  "version": "1.0.17"
+  "version": "1.0.17",
+  "dependencies": {
+    "@aracna/react-components": "1.0.46-rc.0"
+  }
 }
