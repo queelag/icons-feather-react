@@ -73,7 +73,7 @@
   "sideEffects": false,
   "type": "module",
   "types": "index.d.ts",
-  "version": "1.0.17",
+  "version": "1.0.18-rc.0",
   "dependencies": {
     "@aracna/react-components": "1.0.46-rc.0"
   }
