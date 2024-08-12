@@ -57,6 +57,7 @@
     "@aracna/icons-feather": ">= 1.0.0",
     "@aracna/icons-feather-web": ">= 1.0.0",
     "@aracna/react": ">= 1.0.0",
+    "@aracna/react-components": ">= 1.0.0",
     "@aracna/web": ">= 1.0.0",
     "@aracna/web-components": ">= 1.0.0",
     "react": ">= 18.2.0"
