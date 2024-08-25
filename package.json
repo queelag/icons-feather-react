@@ -4,9 +4,10 @@
     "@aracna/core": "^1.1.82",
     "@aracna/icons-feather": "^1.0.10",
     "@aracna/icons-feather-web": "^1.0.23",
-    "@aracna/react": "1.0.53-rc.0",
+    "@aracna/react": "1.0.53",
+    "@aracna/react-components": "1.0.47",
     "@aracna/web": "^1.0.75",
-    "@aracna/web-components": "1.0.81-rc.1",
+    "@aracna/web-components": "1.0.81",
     "@floating-ui/dom": "^1.6.10",
     "@microsoft/api-extractor": "^7.47.5",
     "@testing-library/react": "^16.0.0",
@@ -74,8 +75,5 @@
   "sideEffects": false,
   "type": "module",
   "types": "index.d.ts",
-  "version": "1.0.18",
-  "dependencies": {
-    "@aracna/react-components": "1.0.46-rc.0"
-  }
+  "version": "1.0.18"
 }
