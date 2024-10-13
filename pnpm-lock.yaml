@@ -15,8 +15,8 @@ importers:
         specifier: ^1.0.10
         version: 1.0.10
       '@aracna/icons-feather-web':
-        specifier: ^1.0.24
-        version: 1.0.24(@aracna/core@1.1.92)(@aracna/icons-feather@1.0.10)(@aracna/web-components@1.0.92(@aracna/core@1.1.92)(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1))(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1)
+        specifier: ^1.0.26
+        version: 1.0.26(@aracna/core@1.1.92)(@aracna/icons-feather@1.0.10)(@aracna/web-components@1.0.92(@aracna/core@1.1.92)(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1))(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1)
       '@aracna/react':
         specifier: 1.0.54
         version: 1.0.54(@aracna/core@1.1.92)(@aracna/web@1.0.77(@aracna/core@1.1.92))(@types/react@18.3.11)(react@18.3.1)
@@ -110,8 +110,8 @@ packages:
     resolution: {integrity: sha512-/pKFoTwWk6NO8vEwIKL1aHObm/lGqHnVhYxpvH/WsVa0vnNYGshhFSUC4HUnNPpKW/OzdSyTHF1El+es/G6lyA==}
     engines: {node: '>=16', pnpm: '>=8'}
 
-  '@aracna/icons-feather-web@1.0.24':
-    resolution: {integrity: sha512-L/3r76MpH+NlyiA8SjKLIGuKVSlOWQZz8mRntng8hWVXOFmqHTlUqwkKJ2YROBVW3g73MkZdKz4EZ8tS6XF19w==}
+  '@aracna/icons-feather-web@1.0.26':
+    resolution: {integrity: sha512-IeXNJs/HYm33GOx4cjnOeUfGOsV5dcIj/yycfead0wU60x1ymgrMo1y0AhvfRoGKaFSlwuejBcRG8Y14pswFCQ==}
     engines: {node: '>=16', pnpm: '>=8'}
     peerDependencies:
       '@aracna/core': '>= 1.1.0'
@@ -1819,7 +1819,7 @@ snapshots:
       node-fetch: 3.3.2
       rfc4648: 1.5.3
 
-  '@aracna/icons-feather-web@1.0.24(@aracna/core@1.1.92)(@aracna/icons-feather@1.0.10)(@aracna/web-components@1.0.92(@aracna/core@1.1.92)(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1))(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1)':
+  '@aracna/icons-feather-web@1.0.26(@aracna/core@1.1.92)(@aracna/icons-feather@1.0.10)(@aracna/web-components@1.0.92(@aracna/core@1.1.92)(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1))(@aracna/web@1.0.77(@aracna/core@1.1.92))(lit@3.2.1)':
     dependencies:
       '@aracna/core': 1.1.92
       '@aracna/icons-feather': 1.0.10

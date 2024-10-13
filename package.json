@@ -3,7 +3,7 @@
   "devDependencies": {
     "@aracna/core": "^1.1.92",
     "@aracna/icons-feather": "^1.0.10",
-    "@aracna/icons-feather-web": "^1.0.24",
+    "@aracna/icons-feather-web": "^1.0.26",
     "@aracna/react": "1.0.54",
     "@aracna/react-components": "1.0.52",
     "@aracna/web": "^1.0.77",
