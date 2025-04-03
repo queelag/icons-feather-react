@@ -1,6 +1,7 @@
 import { getPascalCaseString } from '@aracna/core'
 import { mkdir, rm, writeFile } from 'fs/promises'
 import { glob } from 'glob'
+import { basename, extname } from 'path'
 import { format } from 'prettier'
 
 await rm('src/components', { force: true, recursive: true })
@@ -9,7 +10,7 @@ await mkdir('src/components')
 for (let path of await glob('node_modules/@aracna/icons-feather-web/elements/*-element.js')) {
   let name, pname, ts
 
-  name = path.replace('node_modules/@aracna/icons-feather-web/elements/', '').replace('.js', '')
+  name = basename(path).replace(extname(path), '')
   pname = getPascalCaseString(name)
 
   ts = /* HTML */ `
